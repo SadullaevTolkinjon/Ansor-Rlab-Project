@@ -38,6 +38,13 @@ class TextStyleComp {
       fontWeight: FontWeight.w400,
     );
   }
+  static TextStyle regularStRed500(double size) {
+    return TextStyle(
+      color: ColorConst.red,
+      fontSize: size,
+      fontWeight: FontWeight.w400,
+    );
+  }
 }
 
 
