@@ -10,18 +10,18 @@ class TextStyleComp {
     );
   }
 
-  static TextStyle regularStyleGrey500(double size) {
+  static TextStyle regularStyleGrey600(double size) {
     return TextStyle(
       color: ColorConst.grey,
       fontSize: size,
       fontWeight: FontWeight.w600,
     );
   }
-  static TextStyle regularStyleGrey400(double size) {
+  static TextStyle regularStyleGrey500(double size) {
     return TextStyle(
       color: ColorConst.grey,
       fontSize: size,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
     );
   }
   static TextStyle regularWhite400(double size) {
@@ -34,6 +34,13 @@ class TextStyleComp {
   static TextStyle regularStBlack500(double size) {
     return TextStyle(
       color: ColorConst.black,
+      fontSize: size,
+      fontWeight: FontWeight.w400,
+    );
+  }
+  static TextStyle regularStRed500(double size) {
+    return TextStyle(
+      color: ColorConst.red,
       fontSize: size,
       fontWeight: FontWeight.w400,
     );

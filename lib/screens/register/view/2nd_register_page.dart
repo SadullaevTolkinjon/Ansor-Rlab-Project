@@ -7,6 +7,8 @@ import 'package:ancor_inc/screens/register/view/components/elevated_button_widge
 import 'package:ancor_inc/screens/register/view/components/intl_phone_widget.dart';
 import 'package:ancor_inc/screens/register/view/components/text_widget.dart';
 import 'package:ancor_inc/screens/register/view/components/tff_form_field_widget.dart';
+import 'package:ancor_inc/screens/widget/elevated_button_widget.dart';
+import 'package:ancor_inc/screens/widget/my_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -39,7 +41,8 @@ class SecondRegPage extends StatelessWidget {
                       alignment: Alignment.topLeft,
                       lineColor: ColorConst.grey,
                       lineLength: 83.0,
-                      numbers: const [1, 2, 3],
+                      numbers: const [1, 2, 3, 4],
+                      
                     ),
                   ),
                   Column(
@@ -55,14 +58,10 @@ class SecondRegPage extends StatelessWidget {
                       ),
                       Padding(
                         padding: EdgeInsets.only(
-                            top: getHeight(30.0), left: getWidth(75.0)),
+                            top: getHeight(30.0), left: getWidth(65.0)),
                         child: Text(
                           "Ro’yhatdan o’tish",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(24.0),
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: TextStyleComp.regularStyle(32.0),
                         ),
                       ),
                       Padding(
@@ -70,11 +69,7 @@ class SecondRegPage extends StatelessWidget {
                             left: getWidth(16.0), top: getHeight(32.0)),
                         child: Text(
                           "Ism-Familiyangiz",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
                       TextFormFieldWidget(
@@ -88,14 +83,10 @@ class SecondRegPage extends StatelessWidget {
                         ),
                         child: Text(
                           "Telefon Raqamingiz",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
-                      IntlPhoneWidget(),
+                      const IntlPhoneWidget(),
                       Padding(
                         padding: EdgeInsets.only(
                           left: getWidth(16.0),
@@ -103,11 +94,7 @@ class SecondRegPage extends StatelessWidget {
                         ),
                         child: Text(
                           "Parol",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
                       TextFormFieldWidget(
@@ -117,27 +104,11 @@ class SecondRegPage extends StatelessWidget {
                       SizedBox(
                         height: getHeight(150.0),
                       ),
-                      Center(
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            side: BorderSide(
-                              width: 1.0,
-                              color: ColorConst.red,
-                            ),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8.0)),
-                            minimumSize: Size(380, 50),
-                            primary: ColorConst.white,
-                            onPrimary: ColorConst.red,
-                          ),
-                          child: Text("Jo'natish"),
-                          onPressed: () {},
-                        ),
-                      ),
+                      GlobElevatedWidget(),
                       SizedBox(
                         height: getHeight(15.0),
                       ),
-                      ElevatedButtonWidget(),
+                      const ElevatedButtonWidget(),
                     ],
                   ),
                 ],
@@ -149,4 +120,3 @@ class SecondRegPage extends StatelessWidget {
     );
   }
 }
-

@@ -45,11 +45,11 @@ class RegisterPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                       ],
                     ),
                     Padding(
@@ -98,17 +98,17 @@ class RegisterPage extends StatelessWidget {
                   color: ColorConst.black,
                 ),
                 Text("Allaqachon ro’yhatdan o’tganmisiz?",
-                    style: TextStyleComp.regularW500(14.0)),
+                    style: TextStyleComp.regularStBlack500(14.0)),
                 SizedBox(
                   height: getWidth(10.0),
                 ),
                 InkWell(
                   child:
-                      Text("Kirish", style: TextStyleComp.regularStW500(16.0)),
+                      Text("Kirish", style: TextStyleComp.regularStRed500(16.0)),
                   onTap: () {
                     Navigator.pushAndRemoveUntil(context,
                         MaterialPageRoute(builder: (context) {
-                      return SignInPage();
+                      return const SignInPage();
                     }), (route) => false);
                   },
                 )

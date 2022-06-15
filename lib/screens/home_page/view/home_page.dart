@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text(
                 "Skip",
-                style: TextStyleComp.regularStyleW500(
+                style: TextStyleComp.regularStyleGrey500(
                   getHeight(16.0),
                 ),
               ),
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                     child: Text(
                       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                       textAlign: TextAlign.center,
-                      style: TextStyleComp.regularStW500(
+                      style: TextStyleComp.regularStBlack500(
                         getWidth(14.0),
                       ),
                     ),
