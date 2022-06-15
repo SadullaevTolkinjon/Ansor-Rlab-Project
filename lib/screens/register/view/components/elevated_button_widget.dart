@@ -1,5 +1,5 @@
 import 'package:ancor_inc/core/constants/color_constants.dart';
-import 'package:ancor_inc/core/constants/size_config.dart';
+import 'package:ancor_inc/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {

@@ -1,15 +1,12 @@
 import 'package:ancor_inc/core/constants/color_constants.dart';
-import 'package:ancor_inc/core/constants/size_config.dart';
+import 'package:ancor_inc/core/utils/size_config.dart';
 import 'package:ancor_inc/screens/register/cubit/register_cubit.dart';
 import 'package:ancor_inc/screens/register/cubit/register_state.dart';
 import 'package:ancor_inc/screens/register/view/2nd_register_page.dart';
 import 'package:ancor_inc/screens/register/view/components/stack_cont_page.dart';
-import 'package:ancor_inc/screens/register/view/components/text_widget.dart';
 import 'package:ancor_inc/screens/signIn/view/sign_in_page.dart';
 import 'package:ancor_inc/screens/widget/my_text_style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:im_stepper/stepper.dart';
 
@@ -45,11 +42,11 @@ class RegisterPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                         Text("Qadam",
-                            style: TextStyleComp.regularStyleW500(14.0)),
+                            style: TextStyleComp.regularStyleGrey500(14.0)),
                       ],
                     ),
                     Padding(
@@ -98,13 +95,13 @@ class RegisterPage extends StatelessWidget {
                   color: ColorConst.black,
                 ),
                 Text("Allaqachon ro’yhatdan o’tganmisiz?",
-                    style: TextStyleComp.regularW500(14.0)),
+                    style: TextStyleComp.regularWhite400(14.0)),
                 SizedBox(
                   height: getWidth(10.0),
                 ),
                 InkWell(
                   child:
-                      Text("Kirish", style: TextStyleComp.regularStW500(16.0)),
+                      Text("Kirish", style: TextStyleComp.regularWhite400(16.0)),
                   onTap: () {
                     Navigator.pushAndRemoveUntil(context,
                         MaterialPageRoute(builder: (context) {

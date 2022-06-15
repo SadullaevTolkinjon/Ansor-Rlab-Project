@@ -1,4 +1,4 @@
-import 'package:ancor_inc/core/constants/size_config.dart';
+import 'package:ancor_inc/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class StackContWidget extends StatelessWidget {

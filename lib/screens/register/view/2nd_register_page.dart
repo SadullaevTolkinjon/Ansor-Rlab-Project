@@ -1,5 +1,5 @@
 import 'package:ancor_inc/core/constants/color_constants.dart';
-import 'package:ancor_inc/core/constants/size_config.dart';
+import 'package:ancor_inc/core/utils/size_config.dart';
 import 'package:ancor_inc/main.dart';
 import 'package:ancor_inc/screens/register/cubit/register_cubit.dart';
 import 'package:ancor_inc/screens/register/cubit/register_state.dart';

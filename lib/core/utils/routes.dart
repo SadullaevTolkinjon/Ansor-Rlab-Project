@@ -1,4 +1,5 @@
 import 'package:ancor_inc/screens/home_page/view/home_page.dart';
+import 'package:ancor_inc/screens/on_bording/view/on_bording_page.dart';
 import 'package:flutter/material.dart';
 
 class RouterGenerator {
