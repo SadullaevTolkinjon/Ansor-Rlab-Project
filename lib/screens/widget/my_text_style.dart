@@ -31,6 +31,14 @@ class TextStyleComp {
       fontWeight: FontWeight.w400,
     );
   }
+
+  static TextStyle regularWhite600(double size) {
+    return TextStyle(
+      color: ColorConst.white,
+      fontSize: size,
+      fontWeight: FontWeight.w600,
+    );
+  }
   static TextStyle regularStBlack500(double size) {
     return TextStyle(
       color: ColorConst.black,
