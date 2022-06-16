@@ -3,10 +3,13 @@ import 'package:ancor_inc/core/constants/size_config.dart';
 import 'package:ancor_inc/main.dart';
 import 'package:ancor_inc/screens/register/cubit/register_cubit.dart';
 import 'package:ancor_inc/screens/register/cubit/register_state.dart';
+import 'package:ancor_inc/screens/register/view/3rd_register_page.dart';
 import 'package:ancor_inc/screens/register/view/components/elevated_button_widget.dart';
 import 'package:ancor_inc/screens/register/view/components/intl_phone_widget.dart';
 import 'package:ancor_inc/screens/register/view/components/text_widget.dart';
 import 'package:ancor_inc/screens/register/view/components/tff_form_field_widget.dart';
+import 'package:ancor_inc/screens/widget/elevated_button.dart';
+import 'package:ancor_inc/screens/widget/my_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -70,11 +73,7 @@ class SecondRegPage extends StatelessWidget {
                             left: getWidth(16.0), top: getHeight(32.0)),
                         child: Text(
                           "Ism-Familiyangiz",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
                       TextFormFieldWidget(
@@ -88,11 +87,7 @@ class SecondRegPage extends StatelessWidget {
                         ),
                         child: Text(
                           "Telefon Raqamingiz",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
                       IntlPhoneWidget(),
@@ -103,11 +98,7 @@ class SecondRegPage extends StatelessWidget {
                         ),
                         child: Text(
                           "Parol",
-                          style: TextStyle(
-                            color: ColorConst.black,
-                            fontSize: getWidth(14.0),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: TextStyleComp.regularStBlack500(14.0),
                         ),
                       ),
                       TextFormFieldWidget(
@@ -130,8 +121,16 @@ class SecondRegPage extends StatelessWidget {
                             primary: ColorConst.white,
                             onPrimary: ColorConst.red,
                           ),
-                          child: Text("Jo'natish"),
-                          onPressed: () {},
+                          child: Text(
+                            "Jo'natish",
+                            style: TextStyleComp.regularStRed500(18.0),
+                          ),
+                          onPressed: () {
+                            Navigator.pushAndRemoveUntil(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ThirdResgisterPage();
+                            }), (route) => false);
+                          },
                         ),
                       ),
                       SizedBox(
@@ -149,4 +148,3 @@ class SecondRegPage extends StatelessWidget {
     );
   }
 }
-
